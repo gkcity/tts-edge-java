@@ -1,7 +1,7 @@
-package io.github.whitemagic2014.tts;
+package com.github.gkcity.tts;
 
-import io.github.whitemagic2014.tts.bean.TransRecord;
-import io.github.whitemagic2014.tts.bean.Voice;
+import com.github.gkcity.tts.bean.TransRecord;
+import com.github.gkcity.tts.bean.Voice;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

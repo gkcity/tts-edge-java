@@ -10,7 +10,7 @@ java sdk for Edge Read Aloud
 
 ```
 <dependency>
-  <groupId>io.github.whitemagic2014</groupId>
+  <groupId>com.github.gkcity</groupId>
   <artifactId>tts-edge-java</artifactId>
   <version>version</version>
 </dependency>
@@ -19,10 +19,10 @@ java sdk for Edge Read Aloud
 ### gradle
 
 ```
-implementation group: 'io.github.whitemagic2014', name: 'tts-edge-java', version: 'version'
+implementation group: 'com.github.gkcity', name: 'tts-edge-java', version: 'version'
 
 short
-implementation 'io.github.whitemagic2014:tts-edge-java:version'
+implementation 'com.github.gkcity:tts-edge-java:version'
 ```
 
 ## demo

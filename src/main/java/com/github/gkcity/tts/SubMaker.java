@@ -1,4 +1,4 @@
-package io.github.whitemagic2014.tts;
+package com.github.gkcity.tts;
 
 import org.apache.commons.text.StringEscapeUtils;
 

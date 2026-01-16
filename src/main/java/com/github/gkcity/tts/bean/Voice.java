@@ -1,4 +1,4 @@
-package io.github.whitemagic2014.tts.bean;
+package com.github.gkcity.tts.bean;
 
 import java.io.Serializable;
 
@@ -71,11 +71,11 @@ public class Voice implements Serializable {
         Status = status;
     }
 
-    public io.github.whitemagic2014.tts.bean.VoiceTag getVoiceTag() {
+    public com.github.gkcity.tts.bean.VoiceTag getVoiceTag() {
         return VoiceTag;
     }
 
-    public void setVoiceTag(io.github.whitemagic2014.tts.bean.VoiceTag voiceTag) {
+    public void setVoiceTag(com.github.gkcity.tts.bean.VoiceTag voiceTag) {
         VoiceTag = voiceTag;
     }
 

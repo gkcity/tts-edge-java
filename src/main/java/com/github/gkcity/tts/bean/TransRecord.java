@@ -1,4 +1,4 @@
-package io.github.whitemagic2014.tts.bean;
+package com.github.gkcity.tts.bean;
 
 public class TransRecord {
 

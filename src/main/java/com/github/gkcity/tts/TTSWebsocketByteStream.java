@@ -1,4 +1,4 @@
-package io.github.whitemagic2014.tts;
+package com.github.gkcity.tts;
 
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.drafts.Draft_6455;
