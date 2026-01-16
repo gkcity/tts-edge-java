@@ -1,8 +1,6 @@
 package com.github.gkcity.tts;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.alibaba.fastjson.JSON;
 import com.github.gkcity.tts.bean.Voice;
 
 import java.io.BufferedReader;
@@ -13,12 +11,9 @@ import java.util.List;
 
 public class TTSVoice {
 
-    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private static List<Voice> voices;
 
     static {
-        OBJECT_MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-
         ClassLoader classLoader = TTSVoice.class.getClassLoader();
         StringBuilder sb = new StringBuilder();
         try (InputStream inputStream = classLoader.getResourceAsStream("voicesList.json");
@@ -28,11 +23,7 @@ public class TTSVoice {
                 sb.append(line);
             }
 
-            // 使用 Jackson 解析 JSON 数组
-            voices = OBJECT_MAPPER.readValue(
-                    sb.toString(),
-                    new TypeReference<List<Voice>>() {}
-            );
+            voices = JSON.parseArray(sb.toString(), Voice.class);
         } catch (Exception e) {
             e.printStackTrace();
 

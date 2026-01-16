@@ -15,7 +15,7 @@
     <url>https://github.com/WhiteMagic2014/tts-edge-java.git</url>
     <groupId>com.github.gkcity</groupId>
     <artifactId>tts-edge-java</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.3version>
 
     <developers>
         <developer>
@@ -40,9 +40,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.20.1</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
         </dependency>
 
         <dependency>
